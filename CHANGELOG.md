@@ -1,5 +1,23 @@
 # change-sets-poc
 
+## 0.6.3
+
+### Patch Changes
+
+- e5642e3: # Add console.log
+
+  ```js
+  function callAB() {
+      const a = ReturnA()
+      const b = ReturnB()
+
+      console.log(a, b) <---- added
+  }
+
+  callAB()
+
+  ```
+
 ## 0.6.2
 
 ### Patch Changes
