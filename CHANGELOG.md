@@ -1,5 +1,11 @@
 # change-sets-poc
 
+## 0.6.1
+
+### Patch Changes
+
+- 4692334: release-tag
+
 ## 0.6.0
 
 ### Minor Changes
