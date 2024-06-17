@@ -2,7 +2,7 @@ name: publish_release.yml
 on:
   pull_request:
     branches:
-      - changesets-release/main
+      - changeset-release/main
     types:
       - closed
 
