@@ -1,15 +1,13 @@
 name: publish_release.yml
 on:
   pull_request:
-    branches:
-      - changeset-release/main
     types:
       - closed
 
 
 jobs:
   release:
-    if: github.event.pull_request.merged == true
+    if: github.event.pull_request.merged == true && github.head_ref == 'changeset-release/main'
     runs-on: ubuntu-latest
     steps:
       - name: Create Draft Release
