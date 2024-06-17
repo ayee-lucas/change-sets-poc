@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Debug
-        run: echo ${{ github.ref_name }}
+        run: echo ${{ github.head_ref }}
 
       - name: Checkout
         uses: actions/checkout@v4
