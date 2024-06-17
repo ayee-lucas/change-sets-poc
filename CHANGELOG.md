@@ -1,5 +1,11 @@
 # change-sets-poc
 
+## 0.5.0
+
+### Minor Changes
+
+- 43b07b2: head_ref variable debut changed
+
 ## 0.4.8
 
 ### Patch Changes
