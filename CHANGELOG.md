@@ -1,5 +1,11 @@
 # change-sets-poc
 
+## 0.6.0
+
+### Minor Changes
+
+- 11af1f0: removed debug step
+
 ## 0.5.0
 
 ### Minor Changes
