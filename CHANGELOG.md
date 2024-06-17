@@ -1,5 +1,11 @@
 # change-sets-poc
 
+## 0.3.1
+
+### Patch Changes
+
+- 8a0f6bd: fix syntax error
+
 ## 0.3.0
 
 ### Minor Changes
