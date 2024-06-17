@@ -1,5 +1,11 @@
 # change-sets-poc
 
+## 0.4.5
+
+### Patch Changes
+
+- 4a803c4: debug tool
+
 ## 0.4.4
 
 ### Patch Changes
