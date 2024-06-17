@@ -7,7 +7,7 @@ on:
 
 jobs:
   release:
-    if: github.event.pull_request.merged == true && github.ref == 'refs/heads/changeset-release/main'
+    if: github.event.pull_request.merged == true && github.ref_name == 'changeset-release/main'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
