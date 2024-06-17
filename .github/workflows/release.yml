@@ -1,33 +1,23 @@
-name: Release
-
+name: Publish Release
 on:
-  push:
-    branches:
-      - main
+  pull_request:
+    types:
+      - closed
 
 permissions:
-    contents: write
-    pull-requests: write
-
-concurrency: ${{ github.workflow }}-${{ github.ref }}
+  contents: write
 
 jobs:
   release:
-    name: Release
+    if: github.event.pull_request.merged == true && github.head_ref == 'changeset-release/main'
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repo
+      - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Setup Node.js 20
-        uses: actions/setup-node@v4
+      - name: Release
+        uses: ncipollo/release-action@v1
         with:
-          node-version: 20
+          name: release-${{ github.run_number }}.${{ github.run_id }}.${{ github.run_attempt }}
+          tag: release-${{ github.run_number }}.${{ github.run_id }}.${{ github.run_attempt }}
+          body: ${{ github.event.pull_request.title }} - ${{ github.event.pull_request.html_url }}
 
-      - name: Install Dependencies
-        run: yarn
-
-      - name: Create Release Pull Request
-        uses: changesets/action@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
