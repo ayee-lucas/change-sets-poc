@@ -1,5 +1,11 @@
 # change-sets-poc
 
+## 0.4.2
+
+### Patch Changes
+
+- 7551fbc: change github action
+
 ## 0.4.1
 
 ### Patch Changes
