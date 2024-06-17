@@ -1,5 +1,26 @@
 # change-sets-poc
 
+## 0.7.0
+
+### Minor Changes
+
+- 949b134: add const a
+
+  # Const a
+
+  ```js
+  export default function ReturnB() {
+
+      const a = "this is a" <--- add 'a'
+
+      return "this is b"
+  }
+  ```
+
+### Patch Changes
+
+- d17d930: add b string
+
 ## 0.6.3
 
 ### Patch Changes
