@@ -7,13 +7,10 @@ on:
 
 jobs:
   release:
+    if: github.event.pull_request.merged == true && github.head_ref == 'changeset-release/main'
     runs-on: ubuntu-latest
     steps:
-      - name: Debug
-        run: echo ${{ github.head_ref }}
-
       - name: Checkout
         uses: actions/checkout@v4
       - name: Release
         uses: softprops/action-gh-release@v2
-        if: github.event.pull_request.merged == true && github.ref_name == 'changeset-release/main'
