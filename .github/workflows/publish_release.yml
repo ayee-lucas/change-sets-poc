@@ -9,9 +9,11 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
+      - name: Debug
+        run: echo ${{ github.event.pull_request.merged }} && echo ${{ github.event.ref_name }}
+
       - name: Checkout
         uses: actions/checkout@v4
-        run: echo ${{ github.ref_name }}
       - name: Release
         uses: softprops/action-gh-release@v2
         if: github.event.pull_request.merged == true && github.ref_name == 'changeset-release/main'
