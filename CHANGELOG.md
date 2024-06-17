@@ -1,5 +1,11 @@
 # change-sets-poc
 
+## 0.3.2
+
+### Patch Changes
+
+- e49e219: if statement postion
+
 ## 0.3.1
 
 ### Patch Changes
