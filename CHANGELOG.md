@@ -1,5 +1,11 @@
 # change-sets-poc
 
+## 0.4.8
+
+### Patch Changes
+
+- 4863379: fix wrong ref_name access
+
 ## 0.4.7
 
 ### Patch Changes
