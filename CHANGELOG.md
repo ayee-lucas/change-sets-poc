@@ -1,5 +1,11 @@
 # change-sets-poc
 
+## 0.6.2
+
+### Patch Changes
+
+- e2735c4: delete console.log
+
 ## 0.6.1
 
 ### Patch Changes
