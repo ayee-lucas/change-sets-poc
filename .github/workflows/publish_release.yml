@@ -4,6 +4,8 @@ on:
     types:
       - closed
 
+permissions:
+  contents: write
 
 jobs:
   release:
@@ -14,3 +16,7 @@ jobs:
         uses: actions/checkout@v4
       - name: Release
         uses: softprops/action-gh-release@v2
+        with:
+          tag-name: release-${{ github.run_number }}
+          prerelease: true
+
