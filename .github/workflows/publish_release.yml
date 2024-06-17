@@ -1,0 +1,30 @@
+name: publish_release.yml
+on:
+  pull_request:
+    branches:
+      - changesets-release/main
+    types:
+      - closed
+
+
+jobs:
+  if: ${{ github.event.pull_request.merged }}
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create Draft Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: release-v${{ github.run_number }}
+          release_name: Release ${{ github.run_number }}
+          draft: true
+          prerelease: false # must be false to publish
+
+      - uses: eregon/publish-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          release_id: ${{ steps.create_release.outputs.id }}
