@@ -8,7 +8,7 @@ on:
 
 
 jobs:
-  if: ${{ github.event.pull_request.merged }}
+  if: github.event.pull_request.merged == true
   release:
     runs-on: ubuntu-latest
     steps:
