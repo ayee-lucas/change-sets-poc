@@ -1,5 +1,11 @@
 # change-sets-poc
 
+## 0.4.6
+
+### Patch Changes
+
+- 3e85d4d: debug echo
+
 ## 0.4.5
 
 ### Patch Changes
