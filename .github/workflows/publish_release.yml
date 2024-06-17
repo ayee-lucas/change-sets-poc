@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Debug
-        run: echo ${{ github.event.pull_request.merged }} && echo ${{ github.event.ref_name }}
+        run: echo ${{ github.event.ref_name }}
 
       - name: Checkout
         uses: actions/checkout@v4
