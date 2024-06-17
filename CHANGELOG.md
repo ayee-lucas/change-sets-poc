@@ -1,5 +1,15 @@
 # change-sets-poc
 
+## 0.3.0
+
+### Minor Changes
+
+- a0ef032: changed return message for a
+
+### Patch Changes
+
+- 7914e85: add publish release gha
+
 ## 0.2.0
 
 ### Minor Changes
