@@ -1,6 +1,6 @@
 {
   "name": "change-sets-poc",
-  "version": "0.4.5",
+  "version": "0.4.6",
   "private": true,
   "dependencies": {
     "@changesets/cli": "^2.27.5"
