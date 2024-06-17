@@ -10,3 +10,5 @@ function callAB() {
     b
   });
 }
+
+callAB()
