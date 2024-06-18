@@ -1,5 +1,27 @@
 # change-sets-poc
 
+## 1.0.0
+
+### Major Changes
+
+- d2a1b05: add c constant
+
+### Minor Changes
+
+- 089dc23: removed console.log
+
+  # como sea
+
+  ```js
+  const a
+  ```
+
+### Patch Changes
+
+- e20e6ef: add c constant
+
+  asdfsadfsadfasdfsadf
+
 ## 0.7.0
 
 ### Minor Changes
