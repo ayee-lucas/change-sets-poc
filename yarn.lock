@@ -978,6 +978,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"file-a@workspace:packages/file-b":
+  version: 0.0.0-use.local
+  resolution: "file-a@workspace:packages/file-b"
+  languageName: unknown
+  linkType: soft
+
+"file-b@workspace:packages/file-a":
+  version: 0.0.0-use.local
+  resolution: "file-b@workspace:packages/file-a"
+  languageName: unknown
+  linkType: soft
+
 "fill-range@npm:^7.1.1":
   version: 7.1.1
   resolution: "fill-range@npm:7.1.1"

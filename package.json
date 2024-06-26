@@ -2,6 +2,10 @@
   "name": "change-sets-poc",
   "version": "0.7.0",
   "private": true,
+  "workspaces": [
+    "packages/file-a",
+    "packages/file-b"
+  ],
   "dependencies": {
     "@changesets/cli": "^2.27.5"
   }
